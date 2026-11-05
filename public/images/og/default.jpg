@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#080B12"/>
+  <rect x="100" y="100" width="1000" height="430" rx="16" fill="#111827" stroke="#1E293B" stroke-width="2"/>
+  <text x="600" y="250" font-family="system-ui, sans-serif" font-size="48" font-weight="bold" fill="#F8FAFC" text-anchor="middle">LIN TECH</text>
+  <text x="600" y="310" font-family="system-ui, sans-serif" font-size="24" fill="#2563EB" text-anchor="middle">Tecnologia que transforma ideias em soluções</text>
+  <text x="600" y="380" font-family="system-ui, sans-serif" font-size="18" fill="#94A3B8" text-anchor="middle">Desenvolvimento de sites, landing pages e sistemas web personalizados</text>
+  <text x="600" y="480" font-family="system-ui, sans-serif" font-size="16" fill="#64748B" text-anchor="middle">lintech.app</text>
+</svg>

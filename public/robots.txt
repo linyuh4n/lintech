@@ -1,0 +1,13 @@
+# LIN TECH - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://lintech.app/sitemap.xml
+
+# Host
+Host: https://lintech.app
+
+# Disallow admin/private paths (none in static site)
+# Disallow: /admin/
+# Disallow: /private/
