@@ -118,7 +118,7 @@ export function Footer() {
 
         <div className="footer-bottom">
           <p className="footer-copyright">
-            © {currentYear} {companyConfig.name}. Todos os direitos reservados.
+            © {currentYear} {companyConfig.name} {companyConfig.cnpj}. Todos os direitos reservados.
           </p>
           <div className="footer-legal">
             <Link to="/privacidade" className="footer-legal-link">
