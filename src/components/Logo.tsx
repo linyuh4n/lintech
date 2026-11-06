@@ -7,19 +7,19 @@ export interface LogoProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 
 export function Logo({ variant = "default", size = "md", className = "", ...props }: LogoProps) {
   const sizeClasses = {
-    sm: "text-lg",
-    md: "text-xl",
-    lg: "text-2xl",
+    sm: "h-6 w-auto",
+    md: "h-8 w-auto",
+    lg: "h-10 w-auto",
   };
 
   const variantClasses = {
     default: "",
-    white: "",
+    white: "brightness-0 invert",
     inline: "",
   };
 
   const combinedClasses = [
-    "logo",
+    "logo-img",
     sizeClasses[size],
     variantClasses[variant],
     className,
@@ -28,23 +28,15 @@ export function Logo({ variant = "default", size = "md", className = "", ...prop
     .join(" ");
 
   return (
-    <a href="/" className={combinedClasses} aria-label="LIN TECH - Página inicial" {...props}>
-      <svg
-        className="logo-icon"
-        viewBox="0 0 32 32"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+    <a href="/" className="logo-link" aria-label="LIN TECH - Página inicial" {...props}>
+      <img
+        src="/images/logos/logo2.png"
+        alt=""
+        className={combinedClasses}
         aria-hidden="true"
-      >
-        <rect width="32" height="32" rx="8" fill="currentColor" opacity="0.1" />
-        <path
-          d="M10 22V10M10 10L14 6M10 10L6 6M22 10V22M22 22L18 26M22 22L26 26"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
+        width={size === "sm" ? 32 : size === "md" ? 40 : 48}
+        height={size === "sm" ? 32 : size === "md" ? 40 : 48}
+      />
       <span className="logo-text">
         <span className="logo-lin">LIN</span>
         <span className="logo-tech">TECH</span>

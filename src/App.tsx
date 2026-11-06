@@ -7,6 +7,7 @@ import { Services } from "./pages/Services";
 import { Portfolio } from "./pages/Portfolio";
 import { ProjectDetails } from "./pages/ProjectDetails";
 import { Contact } from "./pages/Contact";
+import { Privacy } from "./pages/Privacy";
 import { NotFound } from "./pages/NotFound";
 import "./styles/variables.css";
 import "./styles/global.css";
@@ -28,6 +29,7 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/portfolio/:slug" element={<ProjectDetails />} />
             <Route path="/contato" element={<Contact />} />
+            <Route path="/privacidade" element={<Privacy />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

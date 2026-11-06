@@ -1,0 +1,23 @@
+{
+  "name": "LIN TECH",
+  "short_name": "LIN TECH",
+  "description": "Desenvolvimento de sites profissionais, landing pages e sistemas web personalizados.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080B12",
+  "theme_color": "#2563EB",
+  "icons": [
+    {
+      "src": "/images/logos/logo2.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/logos/logo2.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
