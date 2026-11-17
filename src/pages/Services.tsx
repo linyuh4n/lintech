@@ -19,10 +19,10 @@ export function Services() {
           <span className="section-label" style={{ display: "inline-block", marginBottom: "var(--space-3)" }}>
             NOSSOS SERVIÇOS
           </span>
-          <h1 style={{ fontSize: "var(--text-5xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-4)", color: "var(--color-text)" }}>
+          <h1 style={{ fontSize: "var(--text-fluid-5xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-4)", color: "var(--color-text)" }}>
             Soluções digitais para seu negócio
           </h1>
-          <p style={{ fontSize: "var(--text-xl)", color: "var(--color-text-muted)", maxWidth: "720px", margin: "0 auto" }}>
+          <p style={{ fontSize: "var(--text-fluid-xl)", color: "var(--color-text-muted)", maxWidth: "720px", margin: "0 auto" }}>
             Conheça nossos serviços organizados em três categorias principais. Todas as soluções são desenvolvidas sob medida mediante orçamento personalizado.
           </p>
         </div>
@@ -49,10 +49,10 @@ export function Services() {
                   >
                     <Icon className="w-8 h-8" />
                   </div>
-                  <h2 id={`${category.id}-title`} style={{ fontSize: "var(--text-3xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-3)" }}>
+                  <h2 id={`${category.id}-title`} style={{ fontSize: "var(--text-fluid-3xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-3)" }}>
                     {category.name}
                   </h2>
-                  <p style={{ color: "var(--color-text-muted)", maxWidth: "700px", margin: "0 auto", fontSize: "var(--text-lg)" }}>
+                  <p style={{ color: "var(--color-text-muted)", maxWidth: "700px", margin: "0 auto", fontSize: "var(--text-fluid-lg)" }}>
                     {category.description}
                   </p>
                 </header>
@@ -71,7 +71,7 @@ export function Services() {
           })}
 
           <div style={{ textAlign: "center", marginTop: "var(--space-12)", paddingTop: "var(--space-12)", borderTop: "1px solid var(--color-border)" }}>
-            <h3 style={{ fontSize: "var(--text-xl)", fontWeight: "var(--font-semibold)", marginBottom: "var(--space-4)" }}>
+            <h3 style={{ fontSize: "var(--text-fluid-xl)", fontWeight: "var(--font-semibold)", marginBottom: "var(--space-4)" }}>
               Não encontrou exatamente o que precisa?
             </h3>
             <p style={{ color: "var(--color-text-muted)", marginBottom: "var(--space-6)", maxWidth: "600px", margin: "0 auto var(--space-6)" }}>

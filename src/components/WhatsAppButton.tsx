@@ -8,6 +8,7 @@ interface WhatsAppButtonProps {
   message?: string;
   className?: string;
   showText?: boolean;
+  fullWidth?: boolean;
   onClick?: () => void;
 }
 
@@ -17,6 +18,7 @@ export function WhatsAppButton({
   message,
   className = "",
   showText = true,
+  fullWidth = false,
   onClick,
 }: WhatsAppButtonProps) {
   const handleClick = () => {
@@ -51,7 +53,7 @@ export function WhatsAppButton({
       <Button
         variant={variant === "float" ? "primary" : variant === "hero" ? "primary" : "outline"}
         size={variant === "float" ? "md" : "lg"}
-        fullWidth={variant === "inline"}
+        fullWidth={variant === "inline" || fullWidth}
         onClick={handleClick}
         icon={<MessageSquare className="w-5 h-5" aria-hidden="true" />}
         iconPosition="left"

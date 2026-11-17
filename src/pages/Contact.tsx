@@ -55,10 +55,10 @@ export function Contact() {
           <span className="section-label" style={{ display: "inline-block", marginBottom: "var(--space-3)" }}>
             CONTATO
           </span>
-          <h1 style={{ fontSize: "var(--text-5xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-4)", color: "var(--color-text)" }}>
+          <h1 style={{ fontSize: "var(--text-fluid-5xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-4)", color: "var(--color-text)" }}>
             Solicite seu orçamento
           </h1>
-          <p style={{ fontSize: "var(--text-xl)", color: "var(--color-text-muted)", maxWidth: "720px", margin: "0 auto" }}>
+          <p style={{ fontSize: "var(--text-fluid-xl)", color: "var(--color-text-muted)", maxWidth: "720px", margin: "0 auto" }}>
             Preencha o formulário abaixo ou entre em contato direto pelo WhatsApp. 
             Respondemos em até 24h úteis.
           </p>
@@ -67,7 +67,7 @@ export function Contact() {
 
       <section id="contato" className="section" aria-labelledby="contact-title">
         <div className="container">
-          <div className="grid grid-2 gap-12" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <div className="grid grid-2 gap-12 contact-grid" style={{ maxWidth: "1200px", margin: "0 auto" }}>
             <div>
               <SectionTitle
                 align="left"
@@ -95,8 +95,8 @@ export function Contact() {
                     >
                       <item.icon className="w-6 h-6" />
                     </div>
-                    <div style={{ flex: 1 }}>
-                      <h3 style={{ fontSize: "var(--text-lg)", fontWeight: "var(--font-semibold)", marginBottom: "var(--space-1)" }}>
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <h3 style={{ fontSize: "var(--text-fluid-lg)", fontWeight: "var(--font-semibold)", marginBottom: "var(--space-1)", overflowWrap: "anywhere" }}>
                         {item.title}
                       </h3>
                       <p style={{ color: "var(--color-text-muted)", marginBottom: "var(--space-3)" }}>
@@ -109,7 +109,7 @@ export function Contact() {
               </div>
 
               <div className="card" style={{ marginTop: "var(--space-8)", padding: "var(--space-6)" }}>
-                <h3 style={{ fontSize: "var(--text-lg)", fontWeight: "var(--font-semibold)", marginBottom: "var(--space-4)", display: "flex", alignItems: "center", gap: "var(--space-2)" }}>
+                <h3 style={{ fontSize: "var(--text-fluid-lg)", fontWeight: "var(--font-semibold)", marginBottom: "var(--space-4)", display: "flex", alignItems: "center", gap: "var(--space-2)" }}>
                   <MessageSquare className="w-5 h-5" style={{ color: "var(--color-primary)" }} aria-hidden="true" />
                   Atendimento via WhatsApp
                 </h3>
@@ -117,7 +117,7 @@ export function Contact() {
                   Para um atendimento mais ágil, chame no WhatsApp. 
                   Você será atendido diretamente por nossa equipe.
                 </p>
-                <WhatsAppButton variant="inline" onClick={handleWhatsApp} />
+                <WhatsAppButton variant="inline" onClick={handleWhatsApp} fullWidth />
               </div>
             </div>
 

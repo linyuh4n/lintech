@@ -14,16 +14,17 @@ export function HeroSection() {
             <span className="section-label" style={{ display: "inline-block", marginBottom: "var(--space-3)" }}>
               DESENVOLVIMENTO WEB E SOFTWARE PERSONALIZADO
             </span>
-            <h1 id="hero-title" className="hero-title" style={{ fontSize: "var(--text-5xl)", fontWeight: "var(--font-bold)", lineHeight: "var(--leading-tight)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
+            <h1 id="hero-title" className="hero-title" style={{ fontSize: "var(--text-fluid-5xl)", fontWeight: "var(--font-bold)", lineHeight: "var(--leading-tight)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
               Tecnologia que transforma ideias em soluções.
             </h1>
-            <p className="hero-subtitle" style={{ fontSize: "var(--text-xl)", color: "var(--color-text-secondary)", lineHeight: "var(--leading-relaxed)", marginBottom: "var(--space-8)", maxWidth: "560px" }}>
+            <p className="hero-subtitle" style={{ fontSize: "var(--text-fluid-xl)", color: "var(--color-text-secondary)", lineHeight: "var(--leading-relaxed)", marginBottom: "var(--space-8)", maxWidth: "100%" }}>
               Desenvolvemos sites, landing pages e sistemas web personalizados para empresas que querem crescer, inovar e conquistar espaço no digital.
             </p>
             <div className="hero-cta-group flex flex-wrap gap-4" style={{ marginBottom: "var(--space-8)" }}>
               <Button
                 variant="primary"
                 size="lg"
+                fullWidth={true}
                 onClick={() => document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" })}
                 icon={<ArrowRight className="w-5 h-5" aria-hidden="true" />}
                 iconPosition="right"
@@ -33,12 +34,13 @@ export function HeroSection() {
               <Button
                 variant="outline"
                 size="lg"
+                fullWidth={true}
                 onClick={() => document.getElementById("portfolio")?.scrollIntoView({ behavior: "smooth" })}
               >
                 CONHECER PROJETOS
               </Button>
             </div>
-            <WhatsAppButton variant="hero" onClick={handleWhatsApp} showText={true} />
+            <WhatsAppButton variant="hero" onClick={handleWhatsApp} showText={true} fullWidth />
           </div>
 
           <div className="hero-visual-wrapper animate-slide-up delay-2">

@@ -21,12 +21,15 @@ Website institucional da LIN TECH, empresa especializada em desenvolvimento de s
 lintech/
 ├── public/
 │   ├── images/
+│   │   ├── logos/
+│   │   │   └── logo2.png
 │   │   ├── portfolio/
 │   │   ├── projects/
 │   │   └── og/
 │   ├── favicon.svg
 │   ├── robots.txt
 │   ├── sitemap.xml
+│   ├── site.webmanifest
 │   └── manifest.json
 ├── src/
 │   ├── assets/
@@ -59,6 +62,7 @@ lintech/
 │   │   ├── Portfolio.tsx
 │   │   ├── ProjectDetails.tsx
 │   │   ├── Contact.tsx
+│   │   ├── Privacy.tsx
 │   │   └── NotFound.tsx
 │   ├── config/              # Configurações centralizadas
 │   │   ├── company.ts       # Dados da empresa
@@ -270,6 +274,16 @@ Estrutura:
 
 ## 🚀 Deploy
 
+### Logotipo
+
+O logotipo da marca está em `public/images/logos/logo2.png` e é utilizado em:
+- Header (componente `Logo.tsx`)
+- Footer (componente `Footer.tsx`)
+- Favicon (32x32, 16x16, apple-touch-icon) via `index.html`
+- PWA Manifest (`public/site.webmanifest`)
+
+O componente `Logo.tsx` suporta variantes (`default`, `white`, `inline`) e tamanhos (`sm`, `md`, `lg`).
+
 ### Vercel (Recomendado)
 
 1. Conecte o repositório no Vercel
@@ -310,7 +324,7 @@ Para roteamento client-side, configure redirect:
 - [ ] HTTPS ativo
 - [ ] Sitemap.xml acessível
 - [ ] Robots.txt acessível
-- [ ] Favicon funcionando
+- [ ] Favicon funcionando (logo2.png)
 - [ ] Open Graph testado (Facebook Debugger, Twitter Card Validator)
 - [ ] Google Search Console configurado
 - [ ] Google Analytics 4 configurado (quando ID disponível)
@@ -334,6 +348,12 @@ Para roteamento client-side, configure redirect:
 
 1. Edite `src/config/company.ts` (número formatado e link)
 2. Edite `src/lib/whatsapp.ts` (constante WHATSAPP_NUMBER)
+
+### Atualizar logotipo
+
+1. Substitua `public/images/logos/logo2.png` pelo novo arquivo
+2. O componente `Logo.tsx` usa automaticamente o novo arquivo
+3. Favicons e PWA manifest apontam para o mesmo arquivo
 
 ### Atualizar dados da empresa
 

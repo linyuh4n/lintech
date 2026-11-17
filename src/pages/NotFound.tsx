@@ -22,10 +22,10 @@ export function NotFound() {
       <section style={{ padding: "calc(var(--header-height) + var(--space-20)) 0 var(--space-20)", textAlign: "center", minHeight: "calc(100vh - var(--header-height))", display: "flex", alignItems: "center", justifyContent: "center" }}>
         <div className="container">
           <div className="card" style={{ maxWidth: "480px", margin: "0 auto", padding: "var(--space-16)" }}>
-            <div style={{ fontSize: "8rem", fontWeight: "var(--font-bold)", color: "var(--color-primary)", lineHeight: 1, marginBottom: "var(--space-4)", fontFamily: "var(--font-mono)" }}>
+            <div style={{ fontSize: "var(--text-fluid-6xl)", fontWeight: "var(--font-bold)", color: "var(--color-primary)", lineHeight: 1, marginBottom: "var(--space-4)", fontFamily: "var(--font-mono)" }}>
               404
             </div>
-            <h1 style={{ fontSize: "var(--text-2xl)", marginBottom: "var(--space-4)" }}>
+            <h1 style={{ fontSize: "var(--text-fluid-2xl)", marginBottom: "var(--space-4)" }}>
               Página não encontrada
             </h1>
             <p style={{ color: "var(--color-text-muted)", marginBottom: "var(--space-8)" }}>

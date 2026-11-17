@@ -25,10 +25,10 @@ export function Portfolio() {
           <span className="section-label" style={{ display: "inline-block", marginBottom: "var(--space-3)" }}>
             PORTFÓLIO
           </span>
-          <h1 style={{ fontSize: "var(--text-5xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-4)", color: "var(--color-text)" }}>
+          <h1 style={{ fontSize: "var(--text-fluid-5xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-4)", color: "var(--color-text)" }}>
             Projetos que transformam ideias em realidade
           </h1>
-          <p style={{ fontSize: "var(--text-xl)", color: "var(--color-text-muted)", maxWidth: "720px", margin: "0 auto" }}>
+          <p style={{ fontSize: "var(--text-fluid-xl)", color: "var(--color-text-muted)", maxWidth: "720px", margin: "0 auto" }}>
             Conheça alguns dos projetos desenvolvidos pela LIN TECH. Cada case representa um desafio único resolvido com tecnologia e estratégia.
           </p>
         </div>
@@ -42,7 +42,7 @@ export function Portfolio() {
             subtitle="Filtre por categoria para ver projetos específicos."
           />
 
-          <div className="flex flex-wrap gap-3 justify-center" style={{ marginBottom: "var(--space-10)" }} role="group" aria-label="Filtrar projetos por categoria">
+          <div className="flex flex-wrap gap-3 justify-center filter-buttons" style={{ marginBottom: "var(--space-10)" }} role="group" aria-label="Filtrar projetos por categoria">
             <button
               className={`btn ${activeCategory === "all" ? "btn-primary" : "btn-outline"}`}
               onClick={() => setActiveCategory("all")}
@@ -71,7 +71,7 @@ export function Portfolio() {
           ) : (
             <div className="card" style={{ textAlign: "center", padding: "var(--space-16)", gridColumn: "1 / -1" }}>
               <Filter className="w-12 h-12" style={{ margin: "0 auto var(--space-4)", color: "var(--color-text-dim)" }} aria-hidden="true" />
-              <h3 style={{ fontSize: "var(--text-xl)", marginBottom: "var(--space-2)" }}>
+              <h3 style={{ fontSize: "var(--text-fluid-xl)", marginBottom: "var(--space-2)" }}>
                 Nenhum projeto encontrado
               </h3>
               <p style={{ color: "var(--color-text-muted)", marginBottom: "var(--space-6)" }}>
@@ -89,7 +89,7 @@ export function Portfolio() {
           {projects.length === 0 && (
             <div className="card" style={{ textAlign: "center", padding: "var(--space-16)", marginTop: "var(--space-10)" }}>
               <ExternalLink className="w-12 h-12" style={{ margin: "0 auto var(--space-4)", color: "var(--color-text-dim)" }} aria-hidden="true" />
-              <h3 style={{ fontSize: "var(--text-xl)", marginBottom: "var(--space-2)" }}>
+              <h3 style={{ fontSize: "var(--text-fluid-xl)", marginBottom: "var(--space-2)" }}>
                 Portfólio em construção
               </h3>
               <p style={{ color: "var(--color-text-muted)", marginBottom: "var(--space-6)", maxWidth: "500px", margin: "0 auto var(--space-6)" }}>

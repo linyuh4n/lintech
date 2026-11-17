@@ -38,8 +38,7 @@ export function Logo({ variant = "default", size = "md", className = "", ...prop
         height={size === "sm" ? 32 : size === "md" ? 40 : 48}
       />
       <span className="logo-text">
-        <span className="logo-lin">LIN</span>
-        <span className="logo-tech">TECH</span>
+
       </span>
     </a>
   );

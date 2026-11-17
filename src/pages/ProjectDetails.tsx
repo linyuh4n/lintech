@@ -22,7 +22,7 @@ export function ProjectDetails() {
         <section style={{ padding: "calc(var(--header-height) + var(--space-20)) 0 var(--space-20)", textAlign: "center" }}>
           <div className="container">
             <X className="w-16 h-16" style={{ margin: "0 auto var(--space-6)", color: "var(--color-error)" }} aria-hidden="true" />
-            <h1 style={{ fontSize: "var(--text-3xl)", marginBottom: "var(--space-4)" }}>
+            <h1 style={{ fontSize: "var(--text-fluid-3xl)", marginBottom: "var(--space-4)" }}>
               Projeto não encontrado
             </h1>
             <p style={{ color: "var(--color-text-muted)", marginBottom: "var(--space-8)" }}>
@@ -65,10 +65,10 @@ export function ProjectDetails() {
             </span>
             {project.year && <span className="badge badge-outline">{project.year}</span>}
           </div>
-          <h1 style={{ fontSize: "var(--text-4xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-4)" }}>
+          <h1 style={{ fontSize: "var(--text-fluid-4xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-4)" }}>
             {project.name}
           </h1>
-          <p style={{ fontSize: "var(--text-lg)", color: "var(--color-text-secondary)", maxWidth: "800px" }}>
+          <p style={{ fontSize: "var(--text-fluid-lg)", color: "var(--color-text-secondary)", maxWidth: "800px" }}>
             {project.fullDescription || project.shortDescription}
           </p>
         </div>
@@ -105,14 +105,14 @@ export function ProjectDetails() {
                 >
                   Solicitar projeto similar
                 </a>
-                <WhatsAppButton variant="inline" serviceId="web-system" onClick={handleWhatsApp} />
+                <WhatsAppButton variant="inline" serviceId="web-system" onClick={handleWhatsApp} fullWidth />
               </div>
             </div>
 
             <div>
               {project.problem && (
                 <div className="card" style={{ marginBottom: "var(--space-6)" }}>
-                  <h2 id="project-details-title" style={{ fontSize: "var(--text-xl)", marginBottom: "var(--space-4)", display: "flex", alignItems: "center", gap: "var(--space-2)" }}>
+                  <h2 id="project-details-title" style={{ fontSize: "var(--text-fluid-xl)", marginBottom: "var(--space-4)", display: "flex", alignItems: "center", gap: "var(--space-2)" }}>
                     <span style={{ color: "var(--color-error)" }} aria-hidden="true">●</span>
                     O desafio
                   </h2>
@@ -124,7 +124,7 @@ export function ProjectDetails() {
 
               {project.solution && (
                 <div className="card" style={{ marginBottom: "var(--space-6)" }}>
-                  <h2 style={{ fontSize: "var(--text-xl)", marginBottom: "var(--space-4)", display: "flex", alignItems: "center", gap: "var(--space-2)" }}>
+                  <h2 style={{ fontSize: "var(--text-fluid-xl)", marginBottom: "var(--space-4)", display: "flex", alignItems: "center", gap: "var(--space-2)" }}>
                     <span style={{ color: "var(--color-success)" }} aria-hidden="true">●</span>
                     A solução
                   </h2>
@@ -135,7 +135,7 @@ export function ProjectDetails() {
               )}
 
               <div className="card" style={{ marginBottom: "var(--space-6)" }}>
-                <h2 style={{ fontSize: "var(--text-xl)", marginBottom: "var(--space-4)" }}>
+                <h2 style={{ fontSize: "var(--text-fluid-xl)", marginBottom: "var(--space-4)" }}>
                   Funcionalidades principais
                 </h2>
                 <ul style={{ listStyle: "none", display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "var(--space-3)" }}>
@@ -150,7 +150,7 @@ export function ProjectDetails() {
 
               {project.technologies.length > 0 && (
                 <div className="card" style={{ marginBottom: "var(--space-6)" }}>
-                  <h2 style={{ fontSize: "var(--text-xl)", marginBottom: "var(--space-4)" }}>
+                  <h2 style={{ fontSize: "var(--text-fluid-xl)", marginBottom: "var(--space-4)" }}>
                     Tecnologias utilizadas
                   </h2>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "var(--space-2)" }}>

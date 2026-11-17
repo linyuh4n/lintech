@@ -20,11 +20,11 @@ export function Privacy() {
           <span className="section-label" style={{ display: "inline-block", marginBottom: "var(--space-3)" }}>
             LEGAL
           </span>
-          <h1 style={{ fontSize: "var(--text-5xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-4)", color: "var(--color-text)" }}>
+          <h1 style={{ fontSize: "var(--text-fluid-5xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-4)", color: "var(--color-text)" }}>
             Política de Privacidade
           </h1>
-          <p style={{ fontSize: "var(--text-xl)", color: "var(--color-text-muted)", maxWidth: "720px", margin: "0 auto" }}>
-            Última atualização: {new Date().toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" })}
+          <p style={{ fontSize: "var(--text-fluid-xl)", color: "var(--color-text-muted)", maxWidth: "720px", margin: "0 auto" }}>
+            "Última atualização": {new Date().toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" })}
           </p>
         </div>
       </section>
@@ -33,11 +33,11 @@ export function Privacy() {
         <div className="container">
           <div style={{ maxWidth: "800px", margin: "0 auto" }}>
             <div className="card" style={{ padding: "var(--space-8)" }}>
-              <h2 id="privacy-title" style={{ fontSize: "var(--text-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
+              <h2 id="privacy-title" style={{ fontSize: "var(--text-fluid-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
                 1. Introdução
               </h2>
               <p style={{ color: "var(--color-text-secondary)", lineHeight: "var(--leading-relaxed)", marginBottom: "var(--space-4)" }}>
-                A <strong>LIN TECH</strong> (&quot;nós&quot;, &quot;nosso&quot;, &quot;nos&quot;) valoriza a privacidade dos visitantes do nosso site e clientes.
+                A <strong>LIN TECH</strong> ("nós", "nosso", "nos") valoriza a privacidade dos visitantes do nosso site e clientes.
                 Esta Política de Privacidade explica como coletamos, usamos, divulgamos e protegemos suas informações pessoais
                 quando você acessa nosso site <a href={companyConfig.domain} className="text-primary-light underline">{companyConfig.domain}</a>,
                 preenche formulários de contato ou interage conosco via WhatsApp.
@@ -49,11 +49,11 @@ export function Privacy() {
             </div>
 
             <div className="card" style={{ padding: "var(--space-8)", marginTop: "var(--space-6)" }}>
-              <h2 style={{ fontSize: "var(--text-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
+              <h2 style={{ fontSize: "var(--text-fluid-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
                 2. Informações que Coletamos
               </h2>
 
-              <h3 style={{ fontSize: "var(--text-lg)", fontWeight: "var(--font-semibold)", marginBottom: "var(--space-3)", color: "var(--color-text)" }}>
+              <h3 style={{ fontSize: "var(--text-fluid-lg)", fontWeight: "var(--font-semibold)", marginBottom: "var(--space-3)", color: "var(--color-text)" }}>
                 2.1 Informações fornecidas voluntariamente
               </h3>
               <p style={{ color: "var(--color-text-secondary)", lineHeight: "var(--leading-relaxed)", marginBottom: "var(--space-4)" }}>
@@ -70,7 +70,7 @@ export function Privacy() {
                 <li>Faixa de orçamento estimada (opcional)</li>
               </ul>
 
-              <h3 style={{ fontSize: "var(--text-lg)", fontWeight: "var(--font-semibold)", marginBottom: "var(--space-3)", color: "var(--color-text)" }}>
+              <h3 style={{ fontSize: "var(--text-fluid-lg)", fontWeight: "var(--font-semibold)", marginBottom: "var(--space-3)", color: "var(--color-text)" }}>
                 2.2 Dados de navegação (automáticos)
               </h3>
               <p style={{ color: "var(--color-text-secondary)", lineHeight: "var(--leading-relaxed)", marginBottom: "var(--space-4)" }}>
@@ -87,7 +87,7 @@ export function Privacy() {
             </div>
 
             <div className="card" style={{ padding: "var(--space-8)", marginTop: "var(--space-6)" }}>
-              <h2 style={{ fontSize: "var(--text-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
+              <h2 style={{ fontSize: "var(--text-fluid-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
                 3. Como Usamos suas Informações
               </h2>
               <p style={{ color: "var(--color-text-secondary)", lineHeight: "var(--leading-relaxed)", marginBottom: "var(--space-4)" }}>
@@ -100,12 +100,12 @@ export function Privacy() {
                 <li><strong>Cumprir obrigações legais:</strong> Atender requisições judiciais ou regulatórias, se aplicável.</li>
               </ul>
               <p style={{ color: "var(--color-text-secondary)", lineHeight: "var(--leading-relaxed)", marginBottom: "var(--space-4)" }}>
-                <strong>Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros para fins de marketing.</strong>
+                <strong>"Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros para fins de marketing."</strong>
               </p>
             </div>
 
             <div className="card" style={{ padding: "var(--space-8)", marginTop: "var(--space-6)" }}>
-              <h2 style={{ fontSize: "var(--text-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
+              <h2 style={{ fontSize: "var(--text-fluid-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
                 4. Compartilhamento de Dados
               </h2>
               <p style={{ color: "var(--color-text-secondary)", lineHeight: "var(--leading-relaxed)", marginBottom: "var(--space-4)" }}>
@@ -119,7 +119,7 @@ export function Privacy() {
             </div>
 
             <div className="card" style={{ padding: "var(--space-8)", marginTop: "var(--space-6)" }}>
-              <h2 style={{ fontSize: "var(--text-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
+              <h2 style={{ fontSize: "var(--text-fluid-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
                 5. Cookies e Tecnologias Similares
               </h2>
               <p style={{ color: "var(--color-text-secondary)", lineHeight: "var(--leading-relaxed)", marginBottom: "var(--space-4)" }}>
@@ -135,7 +135,7 @@ export function Privacy() {
             </div>
 
             <div className="card" style={{ padding: "var(--space-8)", marginTop: "var(--space-6)" }}>
-              <h2 style={{ fontSize: "var(--text-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
+              <h2 style={{ fontSize: "var(--text-fluid-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
                 6. Seus Direitos (LGPD)
               </h2>
               <p style={{ color: "var(--color-text-secondary)", lineHeight: "var(--leading-relaxed)", marginBottom: "var(--space-4)" }}>
@@ -157,7 +157,7 @@ export function Privacy() {
             </div>
 
             <div className="card" style={{ padding: "var(--space-8)", marginTop: "var(--space-6)" }}>
-              <h2 style={{ fontSize: "var(--text-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
+              <h2 style={{ fontSize: "var(--text-fluid-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
                 7. Retenção de Dados
               </h2>
               <p style={{ color: "var(--color-text-secondary)", lineHeight: "var(--leading-relaxed)", marginBottom: "var(--space-4)" }}>
@@ -175,7 +175,7 @@ export function Privacy() {
             </div>
 
             <div className="card" style={{ padding: "var(--space-8)", marginTop: "var(--space-6)" }}>
-              <h2 style={{ fontSize: "var(--text-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
+              <h2 style={{ fontSize: "var(--text-fluid-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
                 8. Segurança dos Dados
               </h2>
               <p style={{ color: "var(--color-text-secondary)", lineHeight: "var(--leading-relaxed)", marginBottom: "var(--space-4)" }}>
@@ -189,13 +189,13 @@ export function Privacy() {
                 <li>Acesso restrito a dados (princípio do menor privilégio).</li>
               </ul>
               <p style={{ color: "var(--color-text-secondary)", lineHeight: "var(--leading-relaxed)", marginBottom: "var(--space-4)" }}>
-                <strong>Nenhum sistema é 100% seguro.</strong> Não podemos garantir segurança absoluta, mas nos comprometemos a
+                <strong>"Nenhum sistema é 100% seguro."</strong> Não podemos garantir segurança absoluta, mas nos comprometemos a
                 notificá-lo e às autoridades competentes em caso de incidente de segurança que ofereça risco relevante aos seus direitos.
               </p>
             </div>
 
             <div className="card" style={{ padding: "var(--space-8)", marginTop: "var(--space-6)" }}>
-              <h2 style={{ fontSize: "var(--text-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
+              <h2 style={{ fontSize: "var(--text-fluid-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
                 9. Links para Sites de Terceiros
               </h2>
               <p style={{ color: "var(--color-text-secondary)", lineHeight: "var(--leading-relaxed)", marginBottom: "var(--space-4)" }}>
@@ -206,18 +206,18 @@ export function Privacy() {
             </div>
 
             <div className="card" style={{ padding: "var(--space-8)", marginTop: "var(--space-6)" }}>
-              <h2 style={{ fontSize: "var(--text-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
+              <h2 style={{ fontSize: "var(--text-fluid-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
                 10. Alterações nesta Política
               </h2>
               <p style={{ color: "var(--color-text-secondary)", lineHeight: "var(--leading-relaxed)", marginBottom: "var(--space-4)" }}>
-                Podemos atualizar esta Política de Privacidade periodicamente. A data de &quot;Última atualização&quot; no topo desta página
+                Podemos atualizar esta Política de Privacidade periodicamente. A data de "Última atualização" no topo desta página
                 indica a revisão mais recente. Mudanças significativas serão comunicadas através de aviso em destaque no site
                 ou por e-mail (se tivermos seu contato).
               </p>
             </div>
 
             <div className="card" style={{ padding: "var(--space-8)", marginTop: "var(--space-6)" }}>
-              <h2 style={{ fontSize: "var(--text-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
+              <h2 style={{ fontSize: "var(--text-fluid-2xl)", fontWeight: "var(--font-bold)", marginBottom: "var(--space-6)", color: "var(--color-text)" }}>
                 11. Contato
               </h2>
               <p style={{ color: "var(--color-text-secondary)", lineHeight: "var(--leading-relaxed)", marginBottom: "var(--space-4)" }}>
@@ -245,16 +245,3 @@ export function Privacy() {
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

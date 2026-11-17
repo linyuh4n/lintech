@@ -84,6 +84,18 @@
   --text-5xl: 3rem;
   --text-6xl: 3.75rem;
 
+  /* Fluid Typography (clamp) - Mobile-first */
+  --text-fluid-xs: clamp(0.7rem, 0.65rem + 0.25vw, 0.75rem);
+  --text-fluid-sm: clamp(0.8rem, 0.75rem + 0.25vw, 0.875rem);
+  --text-fluid-base: clamp(0.9rem, 0.85rem + 0.25vw, 1rem);
+  --text-fluid-lg: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-fluid-xl: clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
+  --text-fluid-2xl: clamp(1.375rem, 1.25rem + 0.625vw, 1.5rem);
+  --text-fluid-3xl: clamp(1.625rem, 1.5rem + 0.625vw, 1.875rem);
+  --text-fluid-4xl: clamp(2rem, 1.75rem + 1.25vw, 2.25rem);
+  --text-fluid-5xl: clamp(2.25rem, 2rem + 1.25vw, 3rem);
+  --text-fluid-6xl: clamp(2.75rem, 2.5rem + 1.25vw, 3.75rem);
+
   --font-light: 300;
   --font-normal: 400;
   --font-medium: 500;
@@ -111,13 +123,23 @@
   --z-tooltip: 700;
   --z-toast: 800;
 
-  /* Container */
+  /* Container - responsive padding */
   --container-max: 1200px;
   --container-padding: var(--space-6);
+  --container-padding-xs: var(--space-3);
+  --container-padding-sm: var(--space-4);
+  --container-padding-md: var(--space-6);
+  --container-padding-lg: var(--space-8);
 
   /* Header */
   --header-height: 72px;
   --header-height-mobile: 64px;
+
+  /* Safe area insets for mobile */
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
 }
 
 /* Redução de movimento */
@@ -159,4 +181,34 @@
 :focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
+}
+
+/* Prevent horizontal overflow globally */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Ensure images and media never overflow */
+img, video, svg, canvas, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Pre/code blocks should scroll internally */
+pre, code {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+pre {
+  overflow-x: auto;
+  white-space: pre;
+}
+
+#main-content{
+  margin-top: 80px;
 }
